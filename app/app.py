@@ -37,7 +37,7 @@ st.title("Influenta factorilor demografici si economici asupra emisiilor CO2 la 
 # =========================
 # 1. INCARCARE DATE
 # =========================
-data = pd.read_excel(r"C:\Users\grigo\Documents\Pachete software\Proiect\data\CO2_emissions_factors.xlsx")
+data = pd.read_excel("data/CO2_emissions_factors.xlsx")
 
 st.subheader("Dataset initial")
 st.write(data)
