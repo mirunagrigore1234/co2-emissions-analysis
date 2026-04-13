@@ -2,6 +2,10 @@
 
 Aplicație interactivă pentru analiza influenței factorilor economici și demografici asupra emisiilor de CO2 la nivel global.
 
+## Demo
+
+Aplicația este disponibilă aici: https://co2-emissions-analysis.streamlit.app/
+
 ## Rezultate principale
 
 - PIB-ul are un impact pozitiv semnificativ asupra emisiilor de CO2
