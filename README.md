@@ -44,7 +44,7 @@ Datele utilizate în acest proiect provin din surse publice internaționale:
 
 - Trade in services as share of GDP (%)  
   Our World in Data  
-  Trade in services as share of GDP, 1970 to 2024
+  https://ourworldindata.org/grapher/service-exports-and-imports-gdp
 
 - CO2 emissions (metric tons per capita)  
   The World Bank  
