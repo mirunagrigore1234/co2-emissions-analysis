@@ -38,6 +38,38 @@ Datele utilizate includ indicatori economici și demografici globali:
 - Energie regenerabilă
 - Populație urbană
 
+## Surse date
+
+Datele utilizate în acest proiect provin din surse publice internaționale:
+
+- Trade in services as share of GDP (%)  
+  Our World in Data  
+  https://ourworldindata.org/
+
+- CO2 emissions (metric tons per capita)  
+  The World Bank  
+  https://data.worldbank.org/indicator/EN.ATM.CO2E.PC
+
+- GDP per capita, PPP (current international $)  
+  The World Bank  
+  https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD
+
+- Urban population (% of total population)  
+  The World Bank  
+  https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS
+
+- Population, total  
+  The World Bank  
+  https://data.worldbank.org/indicator/SP.POP.TOTL
+
+- Foreign direct investment, net inflows (BoP, current US$)  
+  The World Bank  
+  https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD
+
+- Renewable energy consumption (% of total final energy consumption)  
+  The World Bank  
+  https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS
+
 ## Metodologie
 
 ### 1. Prelucrarea datelor
