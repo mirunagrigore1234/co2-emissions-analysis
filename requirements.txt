@@ -7,3 +7,9 @@ scikit-learn
 statsmodels
 openpyxl
 plotly
+jupyter
+nbformat
+nbconvert
+ipykernel
+scipy
+kaleido
