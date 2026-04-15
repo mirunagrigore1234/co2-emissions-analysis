@@ -203,4 +203,4 @@ Acest proiect a fost realizat în cadrul unui curs universitar și se concentrea
 
 De asemenea, proiectul pune accent pe interpretarea rezultatelor și înțelegerea relațiilor dintre factorii economici și impactul asupra mediului.
 
-Este destinat scopurilor educaționale și de portofoliu.
+Este destinat scopurilor educaționale și pentru portofoliu.
