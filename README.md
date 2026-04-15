@@ -1,4 +1,4 @@
-# CO2 Emissions Analysis Dashboard
+# Influența factorilor economici și demografici asupra emisiilor de CO2 
 
 Aplicație interactivă pentru analiza influenței factorilor economici și demografici asupra emisiilor de CO2 la nivel global.
 
@@ -189,3 +189,18 @@ Aceste îmbunătățiri pot conduce la modele mai precise și mai relevante pent
 Analiza evidențiază o relație puternică între dezvoltarea economică și nivelul emisiilor de CO2.
 
 Rezultatele sugerează că dezvoltarea economică, deși esențială, vine cu un cost asupra mediului, subliniind necesitatea unor strategii sustenabile pentru reducerea emisiilor și protejarea mediului.
+
+## Echipa
+
+- Ana-Miruna Grigore  
+- Mara-Catinca Marinescu  
+
+**Profesor coordonator:** Ene Gabriela 
+
+## Note
+
+Acest proiect a fost realizat în cadrul unui curs universitar și se concentrează pe analiza datelor, modelare econometrică și utilizarea tehnicilor de machine learning pentru studierea emisiilor de CO2.
+
+De asemenea, proiectul pune accent pe interpretarea rezultatelor și înțelegerea relațiilor dintre factorii economici și impactul asupra mediului.
+
+Este destinat scopurilor educaționale și de portofoliu.
