@@ -1,46 +1,47 @@
-# Influența factorilor economici și demografici asupra emisiilor de CO2 
+# Influence of Economic and Demographic Factors on CO₂ Emissions
 
-Aplicație interactivă pentru analiza influenței factorilor economici și demografici asupra emisiilor de CO2 la nivel global.
+Interactive application for analyzing the influence of economic and demographic factors on global CO₂ emissions.
 
 ## Demo
 
-Aplicația este disponibilă aici: https://co2-emissions-analysis.streamlit.app/
+The application is available here: https://co2-emissions-analysis.streamlit.app/
 
 ## Rezultate principale
 
-- PIB-ul are un impact pozitiv semnificativ asupra emisiilor de CO2
-- Energia regenerabilă contribuie la reducerea emisiilor
-- Țările pot fi grupate în clustere economice distincte
+- GDP has a significant positive impact on CO₂ emissions
+- Renewable energy contributes to reducing emissions
+- Countries can be grouped into distinct economic clusters
 
-## Context și problemă
+## Context and Problem
 
-În contextul schimbărilor climatice, înțelegerea relației dintre dezvoltarea economică și impactul asupra mediului este esențială pentru formularea unor politici sustenabile.
+In the context of climate change, understanding the relationship between economic development and environmental impact is essential for designing sustainable policies.
 
-Acest proiect analizează modul în care factori precum PIB-ul, populația, investițiile străine și utilizarea energiei regenerabile influențează nivelul emisiilor de CO2.
+This project analyzes how factors such as GDP, population, foreign direct investment, and renewable energy usage influence CO₂ emission levels.
 
-Scopul este identificarea relațiilor economice relevante și evidențierea unor tipare globale între țări.
+The goal is to identify relevant economic relationships and highlight global patterns across countries.
 
-## Obiective
-- Analiza relației dintre dezvoltarea economică și emisiile de CO2
-- Identificarea variabilelor cu impact semnificativ asupra emisiilor
-- Evaluarea performanței unui model econometric
-- Gruparea țărilor în funcție de caracteristici economice și de mediu
-- Crearea unei aplicații interactive pentru explorarea datelor
+## Objectives
 
-## Setul de date
+- Analyze the relationship between economic development and CO₂ emissions
+- Identify variables with a significant impact on emissions
+- Evaluate the performance of an econometric model
+- Group countries based on economic and environmental characteristics
+- Create an interactive application for data exploration
 
-Datele utilizate includ indicatori economici și demografici globali:
+## Dataset
 
-- Emisii de CO2
-- PIB pe cap de locuitor (GDP)
-- Populație totală
-- Investiții străine directe (FDI)
-- Energie regenerabilă
-- Populație urbană
+The data used includes global economic and demographic indicators:
 
-## Surse date
+- CO₂ emissions
+- GDP per capita
+- Total population
+- Foreign direct investment (FDI)
+- Renewable energy
+- Urban population
 
-Datele utilizate în acest proiect provin din surse publice internaționale:
+## Data Sources
+
+The data used in this project comes from international public sources:
 
 - Trade in services as share of GDP (%)  
   Our World in Data  
@@ -70,77 +71,80 @@ Datele utilizate în acest proiect provin din surse publice internaționale:
   The World Bank  
   https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS
 
-## Metodologie
+## Methodology
 
-### 1. Prelucrarea datelor
-- Tratarea valorilor lipsă prin imputare cu mediana
-- Identificarea valorilor extreme (outlieri) folosind boxplot
-- Eliminarea variabilelor nerelevante (ex: Country)
+### 1. Data Preprocessing
 
-### 2. Transformări econometrice
-- Transformare logaritmică pentru variabilele asimetrice (CO2, GDP, populație)
-- Transformare asinh pentru FDI (permite valori negative)
-- Standardizare pentru variabile procentuale
+- Handling missing values using median imputation
+- Identifying outliers using boxplots
+- Removing irrelevant variables (e.g., Country)
 
-Aceste transformări reduc impactul valorilor extreme și îmbunătățesc stabilitatea modelului.
+### 2. Econometric Transformations
 
-### 3. Analiză exploratorie (EDA)
-- Distribuții ale variabilelor
-- Matrice de corelații
-- Analiză grafică
+- Log transformation for skewed variables (CO₂, GDP, population)
+- asinh transformation for FDI (allows negative values)
+- Standardization for percentage variables
 
-### 4. Gruparea datelor
-- Clasificarea țărilor în funcție de PIB folosind cuantile (qcut)
-- Analiză comparativă între grupuri
+These transformations reduce the impact of extreme values and improve model stability.
 
-### 5. Model econometric
+### 3. Exploratory Data Analysis (EDA)
 
-A fost utilizat un model de regresie liniară multiplă (OLS – Ordinary Least Squares).
+- Variable distributions
+- Correlation matrix
+- Graphical analysis
 
-- Regresie liniară multiplă (OLS – Ordinary Least Squares)
-- Variabilă dependentă: log_CO2
-- Evaluare folosind:
+### 4. Data Grouping
+
+- Classifying countries based on GDP using quantiles (qcut)
+- Comparative analysis between groups
+
+### 5. Econometric Model
+
+A multiple linear regression model (OLS – Ordinary Least Squares) was used.
+
+- Dependent variable: log_CO2
+- Evaluation metrics:
   - R²
   - RMSE
   - MAE
 
-Modelul permite interpretarea economică prin coeficienți și p-values.
+The model allows economic interpretation through coefficients and p-values.
 
-### 6. Clusterizare
+### 6. Clustering
 
-- Algoritm utilizat: KMeans
-- Determinarea numărului optim de clustere:
-- Elbow Method
-- Silhouette Score
+- Algorithm used: KMeans
+- Determining the optimal number of clusters:
+  - Elbow Method
+  - Silhouette Score
 
 Permite identificarea unor grupuri de țări cu caracteristici similare.
 
-## Interpretare economică
+## Economic Interpretation
 
-- Economiile dezvoltate generează emisii mai ridicate datorită industrializării și consumului energetic crescut
-- Țările cu un nivel ridicat de utilizare a energiei regenerabile au emisii mai reduse
-- Există heterogenitate între economii, ceea ce sugerează că un model global poate să nu surprindă complet diferențele structurale
+- Developed economies generate higher emissions due to industrialization and increased energy consumption
+- Countries with higher renewable energy usage tend to have lower emissions
+- There is heterogeneity across economies, suggesting that a global model may not fully capture structural differences
 
-Acest lucru evidențiază necesitatea unor politici diferențiate de mediu.
+This highlights the need for differentiated environmental policies.
 
 ## Implicații practice
 
-Rezultatele analizei pot fi utilizate pentru:
+The analysis results can be used for:
 
-- formularea politicilor publice de mediu
-- evaluarea impactului dezvoltării economice asupra emisiilor
-- identificarea țărilor cu risc ridicat de poluare
-- prioritizarea investițiilor în energie regenerabilă
+- designing environmental public policies
+- evaluating the impact of economic development on emissions
+- identifying high-risk countries for pollution
+- prioritizing investments in renewable energy
 
-## Aplicație
+## Application
 
-Proiectul include o aplicație interactivă realizată în Streamlit, care permite:
-- vizualizarea datelor
-- explorarea relațiilor dintre variabile
-- analiza performanței modelului
-- interpretarea rezultatelor
+The project includes an interactive application built with Streamlit, allowing:
+- data visualization
+- exploration of relationships between variables
+- model performance analysis
+- interpretation of results
 
-##  Tehnologii utilizate
+##  Technologies Used
 
 - Python
 - Streamlit
@@ -150,7 +154,7 @@ Proiectul include o aplicație interactivă realizată în Streamlit, care permi
 - Scikit-learn
 - Statsmodels
 
-## Structura proiectului
+## Project Structure
 
 ```
 project/
@@ -162,45 +166,47 @@ project/
 ├── README.md
 ```
 
-## Rulare
+## Running the Project
 
 ```bash
 pip install -r requirements.txt
 streamlit run app/app.py
 ```
 
-## Limitări și direcții viitoare
+## Limitations and Future Directions
 
-Modelul de regresie liniară nu captează complet relațiile non-lineare din date, în special pentru economiile cu emisii ridicate.
+The linear regression model does not fully capture non-linear relationships in the data, especially for high-emission economies.
 
-De asemenea, modelul este estimat la nivel global, fără a diferenția între tipuri de economii sau regiuni, ceea ce poate reduce acuratețea în anumite cazuri.
+Additionally, the model is estimated at a global level without distinguishing between types of economies or regions, which may reduce accuracy in some cases.
 
-Direcții de îmbunătățire:
+Possible improvements:
 
-- Integrarea unor variabile suplimentare (ex: politici de mediu, consum energetic)
-- Utilizarea unor modele mai complexe (ex: Random Forest, Gradient Boosting)
-- Analiză separată pe regiuni geografice sau clustere
-- Compararea performanței mai multor modele predictive
+- Adding additional variables (e.g., environmental policies, energy consumption)
+- Using more complex models (e.g., Random Forest, Gradient Boosting)
+- Conducting region-specific or cluster-based analysis
+- Comparing the performance of multiple predictive models
 
-Aceste îmbunătățiri pot conduce la modele mai precise și mai relevante pentru analiza impactului economic asupra mediului.
+These improvements could lead to more accurate and relevant models for analyzing the economic impact on the environment.
 
-## Concluzie
+## Conclusions
 
-Analiza evidențiază o relație puternică între dezvoltarea economică și nivelul emisiilor de CO2.
+The analysis highlights a strong relationship between economic development and CO₂ emissions.
 
-Rezultatele sugerează că dezvoltarea economică, deși esențială, vine cu un cost asupra mediului, subliniind necesitatea unor strategii sustenabile pentru reducerea emisiilor și protejarea mediului.
+The results suggest that while economic growth is essential, it comes with environmental costs, emphasizing the need for sustainable strategies to reduce emissions and protect the environment.
 
-## Echipa
+## Team
 
 - Ana-Miruna Grigore  
 - Mara-Catinca Marinescu  
 
-**Profesor coordonator:** Ene Gabriela 
+**Supervisor:** Ene Gabriela 
 
-## Note
+## Notes
 
-Acest proiect a fost realizat în cadrul unui curs universitar și se concentrează pe analiza datelor, modelare econometrică și utilizarea tehnicilor de machine learning pentru studierea emisiilor de CO2.
+This project was developed as part of a university course and focuses on data analysis, econometric modeling, and the use of machine learning techniques to study CO₂ emissions.
 
-De asemenea, proiectul pune accent pe interpretarea rezultatelor și înțelegerea relațiilor dintre factorii economici și impactul asupra mediului.
+It also emphasizes result interpretation and understanding the relationships between economic factors and environmental impact.
 
-Este destinat scopurilor educaționale și pentru portofoliu.
+It is intended for educational and portfolio purposes.
+
+
