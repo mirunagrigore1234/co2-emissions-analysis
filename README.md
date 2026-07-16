@@ -1,4 +1,4 @@
-# Influence of Economic and Demographic Factors on CO₂ Emissions
+# Interactive CO₂ Emissions Analysis (Python, Streamlit)
 
 Interactive application for analyzing the influence of economic and demographic factors on global CO₂ emissions.
 
